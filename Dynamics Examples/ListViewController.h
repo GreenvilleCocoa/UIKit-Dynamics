@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ListViewController.h
 //  Dynamics Examples
 //
 //  Created by Ryan Poolos on 7/7/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ListViewController : UIViewController
 
 @end

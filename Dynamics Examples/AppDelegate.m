@@ -7,12 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "ListViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor blackColor]];
+    [self.window makeKeyAndVisible];
+    
+    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:[[ListViewController alloc] init]]];
+    
     return YES;
 }
 							
